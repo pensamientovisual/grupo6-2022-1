@@ -1,3 +1,14 @@
+/*
+Paleta:
+-#6B705C
+-#A5A58D
+-#B7B7A4
+-#DBDBD1
+-#DDBEA9
+-#CA997E
+-#BE8160
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +45,7 @@
   }
 
   #fondo{
-    background-color: #b7b7a4;
+    background-color: #DBDBD1;
 }
 .titulo{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -74,7 +85,7 @@
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 80px;
   margin:60px;
-  color: #6b705c;
+  color: #AE6B47;
   text-align: center;
 
 }
