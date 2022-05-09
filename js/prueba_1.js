@@ -1,3 +1,5 @@
+let dataprecios = ["$13600","$15000","$22200","$34000"]
+
 function verprecio(){
     $(".fprecios").toggle(400);
 }

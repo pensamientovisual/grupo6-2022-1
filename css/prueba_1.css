@@ -222,7 +222,11 @@ section#precios p, section#condiciones p, section#desperdicio p, section#transpa
     width: 400px;
     height: 500px;
     font-size: 18px;
-    text-align: justify;
+}
+section#precios ul, section#condiciones ul, section#desperdicio ul, section#transparencia ul{
+    width: 400px;
+    height: 500px;
+    font-size: 18px;
 }
 .infomarcas{
     width: 340px;
@@ -255,5 +259,35 @@ h1, h2{
 }
 .fprecios, .fcondiciones, .fdesperdicios, .ftransparencia{
     display: none;
+    padding-top: 10px;
 }
-
+.tooltip{
+    position: relative;
+}
+.bottom{
+    background: #fbcfb6;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    top: -10px;
+    left: -10px;
+    width: 310px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+.tooltip:hover .bottom{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    
+}
+#disclaimer{
+padding: 20px;
+color: #fff;
+position: relative;
+top: 520px;
+font-size: small;
+}
