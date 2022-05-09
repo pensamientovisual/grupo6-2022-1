@@ -58,7 +58,11 @@ header ul li a:hover
     background: #fff;
     color: #F3876D;
 }
-section
+.activo{
+    background: #fff;
+    color: #F3876D;
+}
+section#principal
 {
     position: relative;
     width: 100%;
@@ -68,7 +72,7 @@ section
     justify-content: center;
     align-items: center;
 }
-section::before
+section#principal::before
 {
     content: "";
     position: absolute;
@@ -136,7 +140,7 @@ section ul
 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-wrap: wrap;
     margin-bottom: 20px;
     background: #F3876D;
@@ -151,14 +155,17 @@ section ul li
     letter-spacing: 1px;
     cursor: pointer;
     color: black;
-    border-radius: 20px
+    border-radius: 30px
 }
 section ul li.active
 {
     background: #F9B792;
     color: #fff;
 }
-.zona_graficos
+#fcomparador{
+    margin-top: 60px;
+}
+/* .zona_graficos
 {
    display: flex; 
    justify-content: center;
@@ -183,4 +190,70 @@ section ul li.active
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+main {
+position: relative;
 }
+section#precios{
+    width: 1300px;
+    height: 500px;
+    background: #F9B792;
+    padding: 30px;
+    /* position: absolute; */
+    z-index: 1;
+    top: 50px;
+    border-radius: 20px;
+}
+section#condiciones, section#desperdicio, section#transparencia{
+    width: 1300px;
+    height: 500px;
+    background: #F9B792;
+    padding: 30px;
+    /* position: absolute; */
+    z-index: auto;
+    top: 50px;
+    border-radius: 20px;
+    /* visibility: hidden; */
+}
+section#precios h2, section#condiciones h2, section#desperdicio h2, section#transparencia h2{
+font-size: 30px;
+}
+section#precios p, section#condiciones p, section#desperdicio p, section#transparencia p{
+    width: 400px;
+    height: 500px;
+    font-size: 18px;
+    text-align: justify;
+}
+.infomarcas{
+    width: 340px;
+    /* height: 600px; */
+    background: #F9B792;
+    padding: 30px;
+    position: absolute;
+    z-index: auto;
+    top: 250px;
+    border-radius: 20px;
+}
+#shein{
+    top: 200px;
+    left: 20px;
+}
+#hym{
+    top: 200px;
+    left: 375px;
+}
+#zara{
+    top: 200px;
+    left: 730px;
+}
+#levis{
+    top: 200px;
+    left: 1085px;
+}
+h1, h2{
+    color: #fff;
+}
+.fprecios, .fcondiciones, .fdesperdicios, .ftransparencia{
+    display: none;
+}
+

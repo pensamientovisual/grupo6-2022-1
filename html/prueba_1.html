@@ -3,24 +3,25 @@
     <head>
         <meta charset="utf-8">
         <link href="../css/prueba_1.css" rel="stylesheet"/>
-        <script type="text/javascript" src ="jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="../js/animacion.js"></script>  
+        <script type="text/javascript" src ="../js/jquery-3.6.0.js"></script>
+        <script src="../js/prueba_1.js"></script>  
 
         <title>Detrás de tu prenda</title>
     </head>
 
     <body>
         <header>
-            <a href = "#" class = "logo">Detrás de tu prenda</a>
-            <ul>
-                <li><a href = "#" class = "activo">Inicio</a></li>
-                <li><a href = "#">Acerca</a></li>
-                <li><a href = "#">Marcas</a></li>
-                <li><a href = "#">Contactos</a></li>
+            <a href = "prueba_1.html" class = "logo">Detrás de tu prenda</a>
+            <ul class = "menu">
+                <li><a href = "prueba_1.html" class = "activo">Inicio</a></li>
+                <li><a href = "#sec">Acerca</a></li>
+                <li><a href = "comparador.html">Comparador</a></li>
+                <!-- <li><a href = "#">Marcas</a></li> -->
+                <li><a href = "referencias.html">Referencias</a></li>
             </ul>
         </header>
 
-        <section>
+        <section id = "principal">
             <img src = "3.png" id = "detras">
             <h2 id = "texto">¿Qué conlleva tu ropa?</h2>
             <img src = "Mesa de trabajo 1.png" id = "frente">
@@ -43,6 +44,7 @@
             let frente = document.getElementById("frente");
             let header = document.querySelector("header");
 
+            /* animacion */
             window.addEventListener("scroll", function(){
                 let value = window.scrollY;
                 texto.style.marginRight = value * 3 + "px";
@@ -54,16 +56,16 @@
         </script>
 
         <section id = "graphs">
-            <ul id = "graphs ul">
-                <li class = "list active" data-filter = "todos">Todos</li>
-                <li class = "list" data-filter = "precios">Precios</li>
-                <li class = "list" data-filter = "condiciones">Condiciones laborales</li>
-                <li class = "list" data-filter = "desperdicio">Desperdicio</li>
-                <li class = "list" data-filter = "calidad">Calidad</li>
+            <ul class = "tabs">
+                <!-- <li class = "list active" data-filter = "todos">Todos</li> -->
+                <li class = "list" href = "#precios">Precios</li>
+                <li class = "list" href = "#condiciones">Condiciones laborales</li>
+                <li class = "list" href = "#desperdicio">Desperdicio</li>
+                <li class = "list" href = "#transparencia">Transparencia</li>
             </ul>
 
             <div class = "zona_graficos">
-                <div class = "grafico" data-íten = "precios"><img src = "column-chart.jpeg"></div> <!--aquí van los gráficos, en cada div-->
+                <!-- <div class = "grafico" data-íten = "precios"><img src = "column-chart.jpeg"></div> aquí van los gráficos, en cada div
                 <div class = "grafico" data-íten = "precios"></div>
                 <div class = "grafico" data-íten = "precios"></div>
                 <div class = "grafico" data-íten = "precios"></div>
@@ -78,10 +80,49 @@
                 <div class = "grafico" data-íten = "desperdicio"></div>
                 <div class = "grafico" data-íten = "desperdicio"></div>
 
-                <div class = "grafico" data-íten = "calidad"></div>
-                <div class = "grafico" data-íten = "calidad"></div>
-                <div class = "grafico" data-íten = "calidad"></div>
-                <div class = "grafico" data-íten = "calidad"></div>
+                <div class = "grafico" data-íten = "transparencia"></div>
+                <div class = "grafico" data-íten = "transparencia"></div>
+                <div class = "grafico" data-íten = "transparencia"></div>
+                <div class = "grafico" data-íten = "transparencia"></div> -->
+                <main>
+                    <section id = "precios" class = "info">
+                        <article>
+                            <h2>Precios</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </article>
+                        <figure>
+                            
+                        </figure>
+                    </section>
+                    <section id = "condiciones"  class = "info">
+                        <article>
+                            <h2>Condiciones laborales</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </article>
+                        <figure>
+                            
+                        </figure>
+                    </section>
+                    <section id = "desperdicio"  class = "info">
+                        <article>
+                            <h2>Desperdicio</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </article>
+                        <figure>
+                            
+                        </figure>
+                    </section>
+                    <section id = "transparencia"  class = "info">
+                        <article>
+                            <h2>Transparencia</h2>
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </article>
+                        <figure>
+                            
+                        </figure>
+
+                    </section>
+                </main>
             </div>
         </section>
 
