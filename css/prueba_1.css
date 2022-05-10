@@ -103,7 +103,7 @@ section img#frente
     right: -350px;
     color: #fff;
     white-space: nowrap;
-    font-size: 7vw;
+    font-size: 6vw;
     z-index: 9;
     transform: translateY(80px);
 }
@@ -296,4 +296,13 @@ font-size: small;
     width:40%;
     float: left;
     margin:20px;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
 }
