@@ -298,6 +298,12 @@ font-size: small;
     padding: 20px;
 }
 
+.segunda-columna {
+    width:60%;
+    float: right;
+    padding: 20px;
+}
+
 @media screen and (max-width: 800px) {
     .contenedor{
         width: 100%;
