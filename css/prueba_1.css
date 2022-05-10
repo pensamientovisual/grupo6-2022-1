@@ -196,7 +196,7 @@ position: relative;
 }
 section#precios{
     width: 1300px;
-    height: 500px;
+    height: 410px;
     background: #F9B792;
     padding: 30px;
     /* position: absolute; */
@@ -204,9 +204,31 @@ section#precios{
     top: 50px;
     border-radius: 20px;
 }
-section#condiciones, section#desperdicio, section#transparencia{
+section#condiciones{
     width: 1300px;
-    height: 500px;
+    height: 480px;
+    background: #F9B792;
+    padding: 30px;
+    /* position: absolute; */
+    z-index: auto;
+    top: 50px;
+    border-radius: 20px;
+    /* visibility: hidden; */
+}
+section#desperdicio{
+    width: 1300px;
+    height: 340px;
+    background: #F9B792;
+    padding: 30px;
+    /* position: absolute; */
+    z-index: auto;
+    top: 50px;
+    border-radius: 20px;
+    /* visibility: hidden; */
+}
+section#transparencia{
+    width: 1300px;
+    height: 430px;
     background: #F9B792;
     padding: 30px;
     /* position: absolute; */
@@ -217,16 +239,20 @@ section#condiciones, section#desperdicio, section#transparencia{
 }
 section#precios h2, section#condiciones h2, section#desperdicio h2, section#transparencia h2{
 font-size: 30px;
+text-align: justify;
 }
 section#precios p, section#condiciones p, section#desperdicio p, section#transparencia p{
     width: 400px;
     height: 500px;
     font-size: 18px;
+    text-align: justify;
+    padding-top: 20px;
 }
 section#precios ul, section#condiciones ul, section#desperdicio ul, section#transparencia ul{
     width: 400px;
     height: 500px;
     font-size: 18px;
+    text-align: justify;
 }
 .infomarcas{
     width: 340px;
@@ -311,4 +337,27 @@ font-size: small;
     aside{
         width: 100%;
     }
+}
+
+#acerca
+{
+    font-size: 1.4em;
+    text-align: justify;
+    padding-top: 20px;
+}
+#sec
+{
+    padding-bottom: 0px;
+}
+.list
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+.tabs
+{
+    padding-top: 0px;
+    padding-bottom: 40px;
 }
