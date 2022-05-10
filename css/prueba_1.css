@@ -291,3 +291,12 @@ position: relative;
 top: 520px;
 font-size: small;
 }
+
+@media screen and (max-width: 800px) {
+    .contenedor{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+}
