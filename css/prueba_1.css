@@ -295,7 +295,7 @@ font-size: small;
 .primera-columna {
     width:40%;
     float: left;
-    margin:20px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 800px) {
